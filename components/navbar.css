@@ -5,3 +5,8 @@
 .navbar-links { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; }
 .navbar-links a { color: #fff; padding: 6px 12px; text-decoration: none; }
 .navbar-links a:hover, .navbar-links a.active { background: #922b21; }
+
+@media (max-width: 768px) {
+    .navbar-inner { flex-direction: column; gap: 8px; }
+    .navbar-links { flex-wrap: wrap; justify-content: center; }
+}

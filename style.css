@@ -2,13 +2,7 @@ body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; padding: 
 a { color: #c0392b; }
 a:hover { text-decoration: underline; }
 
-/* Navbar */
-.navbar { background: #c0392b; padding: 10px 20px; }
-.navbar-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
-.navbar-brand { font-size: 1.3rem; font-weight: bold; color: #fff; }
-.navbar-links { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; }
-.navbar-links a { color: #fff; padding: 6px 12px; text-decoration: none; }
-.navbar-links a:hover, .navbar-links a.active { background: #922b21; }
+/* Navbar CSS moved to components/navbar.css */
 
 /* Layout */
 .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
@@ -22,29 +16,13 @@ a:hover { text-decoration: underline; }
 .hero-search button { padding: 8px 18px; background: #c0392b; color: #fff; border: none; cursor: pointer; font-size: 1rem; }
 .hero-search button:hover { background: #922b21; }
 
-/* Page Header */
-.page-header { padding: 16px 0 10px; text-align: center; }
-.page-header h1 { font-size: 1.6rem; margin: 0 0 4px 0; }
-.page-header p { color: #666; margin: 0; }
+/* Page Header CSS moved to components/page_header.php */
 
 /* Section Header */
 .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 .section-header h2 { font-size: 1.2rem; margin: 0; }
 
-/* Cards */
-.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
-.card { background: #fff; border: 1px solid #ccc; }
-.card-strip { height: 4px; }
-.card-strip-lost { background: #c0392b; }
-.card-strip-found { background: #27ae60; }
-.card-body { padding: 14px; }
-.card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-.card-title { font-size: 1rem; font-weight: bold; }
-.card-description { color: #555; font-size: 0.9rem; margin-bottom: 10px; }
-.card-tags { margin-bottom: 8px; }
-.card-meta { display: flex; justify-content: space-between; font-size: 0.82rem; color: #888; border-top: 1px solid #eee; padding-top: 8px; margin-top: 8px; }
-.card-author { color: #c0392b; font-weight: bold; }
-.card-actions { padding: 10px 14px; border-top: 1px solid #eee; background: #f9f9f9; }
+/* Cards CSS moved to components/item_card.php */
 
 /* Badges */
 .badge { display: inline-block; padding: 2px 8px; font-size: 0.75rem; font-weight: bold; }
@@ -63,12 +41,7 @@ a:hover { text-decoration: underline; }
 .badge-faculty  { background: #fef9e7; color: #7d6608; }
 .badge-admin_request { background: #fde8e8; color: #c0392b; }
 
-/* Alerts */
-.alert { padding: 10px 14px; border: 1px solid #ccc; margin-bottom: 14px; font-size: 0.9rem; }
-.alert-success { background: #d4efdf; color: #1e8449; border-color: #a9dfbf; }
-.alert-error   { background: #fadbd8; color: #922b21; border-color: #f1948a; }
-.alert-info    { background: #d6eaf8; color: #1a5276; border-color: #a9cce3; }
-.alert-warning { background: #fef9e7; color: #7d6608; border-color: #f9e79f; }
+/* Alerts CSS moved to components/alert.php */
 
 /* Forms */
 .form-card { background: #fff; border: 1px solid #ccc; padding: 24px; max-width: 480px; margin: 0 auto; }
@@ -171,24 +144,19 @@ textarea.form-control { min-height: 100px; resize: vertical; }
 .chart-card h3 { font-size: 1rem; margin: 0 0 14px 0; padding-bottom: 8px; border-bottom: 1px solid #eee; }
 .chart-card canvas { max-height: 260px; }
 
-/* Empty State */
-.empty-state { text-align: center; padding: 40px 20px; color: #999; }
-.empty-state .empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
-.empty-state h3 { font-size: 1rem; color: #666; margin-bottom: 6px; }
+/* Empty State CSS moved to components/empty_state.php */
 
 /* Auth & Misc */
 .auth-footer { text-align: center; margin-top: 18px; padding-top: 14px; border-top: 1px solid #eee; font-size: 0.9rem; color: #888; }
 .divider { display: flex; align-items: center; gap: 10px; margin: 18px 0; color: #aaa; font-size: 0.85rem; }
 .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: #ddd; }
-.footer { text-align: center; padding: 16px; font-size: 0.82rem; color: #aaa; border-top: 1px solid #ddd; margin-top: 24px; }
+/* Footer CSS moved to components/footer.php */
 
 /* Responsive */
 @media (max-width: 768px) {
-    .navbar-inner { flex-direction: column; gap: 8px; }
-    .navbar-links { flex-wrap: wrap; justify-content: center; }
     .hero h1 { font-size: 1.4rem; }
     .hero-search { flex-direction: column; }
-    .cards-grid, .form-row, .role-selector { grid-template-columns: 1fr; }
+    .form-row, .role-selector { grid-template-columns: 1fr; }
     .filter-bar form { flex-direction: column; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .charts-grid { grid-template-columns: 1fr; }

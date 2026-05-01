@@ -12,6 +12,9 @@
 .card-meta { display: flex; justify-content: space-between; font-size: 0.82rem; color: #888; border-top: 1px solid #eee; padding-top: 8px; margin-top: 8px; }
 .card-author { color: #c0392b; font-weight: bold; }
 .card-actions { padding: 10px 14px; border-top: 1px solid #eee; background: #f9f9f9; }
+@media (max-width: 768px) {
+    .cards-grid { grid-template-columns: 1fr; }
+}
 </style>
                     <div class="card">
                         <div class="card-strip <?php echo ($row['type'] === 'Lost') ? 'card-strip-lost' : 'card-strip-found'; ?>"></div>
