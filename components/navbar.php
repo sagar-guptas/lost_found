@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="components/navbar.css">
 <nav class="navbar">
     <div class="navbar-inner">
         <div class="navbar-brand">🔍 Lost & Found</div>
