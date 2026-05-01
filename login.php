@@ -72,6 +72,13 @@ include 'components/header.php';
 include 'components/navbar.php';
 ?>
 
+<style>
+/* Auth & Misc */
+.auth-footer { text-align: center; margin-top: 18px; padding-top: 14px; border-top: 1px solid #eee; font-size: 0.9rem; color: #888; }
+.divider { display: flex; align-items: center; gap: 10px; margin: 18px 0; color: #aaa; font-size: 0.85rem; }
+.divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: #ddd; }
+</style>
+
 <div class="container">
     <div class="page-header">
         <h1>Welcome Back</h1>

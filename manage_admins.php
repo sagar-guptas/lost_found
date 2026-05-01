@@ -47,6 +47,16 @@ include 'components/header.php';
 include 'components/admin_navbar.php';
 ?>
 
+<style>
+/* Admin Table */
+.admin-table-wrap { background: #fff; border: 1px solid #ccc; overflow-x: auto; }
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th { padding: 10px 14px; text-align: left; font-size: 0.8rem; color: #888; text-transform: uppercase; border-bottom: 1px solid #ccc; background: #f5f5f5; }
+.admin-table td { padding: 10px 14px; font-size: 0.9rem; border-bottom: 1px solid #eee; vertical-align: middle; }
+.admin-table tbody tr:hover { background: #f9f9f9; }
+.admin-table tbody tr:last-child td { border-bottom: none; }
+</style>
+
 <div class="container">
     <div class="page-header">
         <h1>🛡️ Manage Admins</h1>
