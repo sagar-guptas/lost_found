@@ -5,4 +5,5 @@
 .alert-info    { background: #d6eaf8; color: #1a5276; border-color: #a9cce3; }
 .alert-warning { background: #fef9e7; color: #7d6608; border-color: #f9e79f; }
 </style>
-        <div class="alert alert-<?php echo htmlspecialchars($alert_type); ?>"><?php echo htmlspecialchars($alert_message); ?></div>
+        <div class="alert alert-<?php echo htmlspecialchars($alert_type); ?>">
+                <?php echo htmlspecialchars($alert_message); ?></div>

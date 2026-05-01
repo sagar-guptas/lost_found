@@ -143,7 +143,7 @@ include 'components/navbar.php';
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 9876543210" value="<?php echo htmlspecialchars($phone ?? ''); ?>" required>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 9122421234" value="<?php echo htmlspecialchars($phone ?? ''); ?>" required>
                     </div>
                 </div>
 
